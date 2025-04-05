@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shop Đa Dạng - Diverse Shop</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f5f5;
+      color: #333;
+    }
+    header {
+      background-color: #222;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      background-color: #444;
+      padding: 10px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .hero {
+      background-image: url('https://source.unsplash.com/featured/?shopping');
+      background-size: cover;
+      background-position: center;
+      color: white;
+      text-align: center;
+      padding: 100px 20px;
+    }
+    .section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .section h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .products {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+    .product {
+      background-color: white;
+      border-radius: 10px;
+      padding: 20px;
+      width: 200px;
+      text-align: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .product img {
+      width: 100%;
+      border-radius: 10px;
+    }
+    footer {
+      background-color: #222;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+    .lang-switch {
+      text-align: center;
+      margin-top: 20px;
+    }
+    .lang-switch button {
+      padding: 10px;
+      margin: 0 5px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1 id="title">Cửa Hàng Đa Dạng</h1>
+    <p id="subtitle">Nơi bạn tìm thấy mọi thứ bạn cần</p>
+  </header>
+
+  <nav>
+    <a href="#">Trang chủ / Home</a>
+    <a href="#">Sản phẩm / Products</a>
+    <a href="#">Liên hệ / Contact</a>
+  </nav>
+
+  <div class="hero">
+    <h2 id="heroText">Khám phá bộ sưu tập mới nhất của chúng tôi!</h2>
+  </div>
+
+  <section class="section">
+    <h2 id="productTitle">Sản phẩm nổi bật / Featured Products</h2>
+    <div class="products">
+      <div class="product">
+        <img src="https://source.unsplash.com/200x200/?clothes" alt="Quần áo">
+        <p id="product1">Quần áo thời trang / Fashion Clothing</p>
+      </div>
+      <div class="product">
+        <img src="https://source.unsplash.com/200x200/?shoes" alt="Giày dép">
+        <p id="product2">Giày dép phong cách / Stylish Footwear</p>
+      </div>
+      <div class="product">
+        <img src="https://source.unsplash.com/200x200/?food" alt="Đồ ăn">
+        <p id="product3">Đồ ăn hấp dẫn / Delicious Food</p>
+      </div>
+      <div class="product">
+        <img src="https://source.unsplash.com/200x200/?home" alt="Đồ dùng">
+        <p id="product4">Đồ dùng tiện ích / Handy Tools</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="lang-switch">
+    <button onclick="switchToVietnamese()">Tiếng Việt</button>
+    <button onclick="switchToEnglish()">English</button>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Cửa Hàng Đa Dạng - Diverse Shop. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function switchToVietnamese() {
+      document.getElementById("title").textContent = "Cửa Hàng Đa Dạng";
+      document.getElementById("subtitle").textContent = "Nơi bạn tìm thấy mọi thứ bạn cần";
+      document.getElementById("heroText").textContent = "Khám phá bộ sưu tập mới nhất của chúng tôi!";
+      document.getElementById("productTitle").textContent = "Sản phẩm nổi bật / Featured Products";
+      document.getElementById("product1").textContent = "Quần áo thời trang / Fashion Clothing";
+      document.getElementById("product2").textContent = "Giày dép phong cách / Stylish Footwear";
+      document.getElementById("product3").textContent = "Đồ ăn hấp dẫn / Delicious Food";
+      document.getElementById("product4").textContent = "Đồ dùng tiện ích / Handy Tools";
+    }
+
+    function switchToEnglish() {
+      document.getElementById("title").textContent = "Diverse Shop";
+      document.getElementById("subtitle").textContent = "Where you find everything you need";
+      document.getElementById("heroText").textContent = "Discover our latest collection!";
+      document.getElementById("productTitle").textContent = "Featured Products / Sản phẩm nổi bật";
+      document.getElementById("product1").textContent = "Fashion Clothing / Quần áo thời trang";
+      document.getElementById("product2").textContent = "Stylish Footwear / Giày dép phong cách";
+      document.getElementById("product3").textContent = "Delicious Food / Đồ ăn hấp dẫn";
+      document.getElementById("product4").textContent = "Handy Tools / Đồ dùng tiện ích";
+    }
+  </script>
+</body>
+</html>
